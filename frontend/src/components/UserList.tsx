@@ -61,7 +61,7 @@ export default function UserList() {
         <tr>
           <th>Name</th>
           <th>Email</th>
-          <th>Age</th>
+          <th>Birth Year</th>
           <th>Action</th>
         </tr>
       </thead>

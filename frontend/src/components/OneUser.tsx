@@ -68,12 +68,15 @@ export default function OneUser({
     );
   }
 
+  // Setting year for birth year calculation
+  const currentYear = new Date().getFullYear();
+
   // Setting users information, with actions to update users information or initiate users deletion
   return (
     <tr>
       <td>{name} </td>
       <td> {email} </td>
-      <td> {age}</td>
+      <td> {currentYear - age}</td>
       <td>
         <button onClick={() => navigate(`/updateUser/${id}`)}>Edit</button>
         <button onClick={() => setIsDeleteInitiated(true)}>Delete</button>
